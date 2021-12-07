@@ -15,10 +15,13 @@
     - [Installer Git](#installer-git)
       - [Sous Windows](#sous-windows)
       - [Sous Linux](#sous-linux)
-    - [Créer un dépot local](#créer-un-dépot-local)
+      - [Configuration rapide](#configuration-rapide)
+    - [Créer un dépôt local](#créer-un-dépôt-local)
       - [Si vous voulez suivre les modifications de votre travail en cours](#si-vous-voulez-suivre-les-modifications-de-votre-travail-en-cours)
       - [Si vous voulez faire un répertoire qui sera partagé et sur lequel vous allez faire des opérations de type "push](#si-vous-voulez-faire-un-répertoire-qui-sera-partagé-et-sur-lequel-vous-allez-faire-des-opérations-de-type-push)
-
+      - [Répertoire .git](#répertoire-git)
+    - [Cloner un dépôt](#cloner-un-dépôt)
+  - [Crédits](#crédits)
 
 - Git :
   - cloner un dépôt  
@@ -50,7 +53,7 @@
 
     __On a tous une copie du dépôt et on peut continuer à enregistrer ses modifications hors connexion__
 
-    ![Décentralisé](img/Décentralisé.png)
+    ![Décentralisé](img/decentralise.png)
 
 ### Pourquoi?
 
@@ -61,7 +64,7 @@ L'intérêt de Git couplé à Gitlab pour notre groupe
 - Rédiger un article scientifique en enregistrant les modifications au fur et à mesure
 - Sauver votre travail en cas de feu
 
-![En cas de feu](img/in_case_of_fire.jpg)
+![https://www.reddit.com/r/ProgrammerHumor/comments/3nc531/in_case_of_fire/](img/in_case_of_fire.jpg)
 
 ### Des limites
 
@@ -69,7 +72,7 @@ Git fonctionne avec les fichiers binaires de grande taille mais il vaut mieux tr
 
 ### Installer Git
 
-#### Sous Windows 
+#### Sous Windows
 
 Il faut télécharger l'installeur sur [https://git-scm.com/download/win](https://git-scm.com/download/win) et faire **Suivant** à chaque page
 
@@ -77,11 +80,19 @@ Il faut télécharger l'installeur sur [https://git-scm.com/download/win](https:
 
 On prend son gestionnaire de paquet préféré et on choisit le paquet git ! Au cas où [Lien Unix](https://git-scm.com/download/linux)
 
-### Créer un dépot local
+#### Configuration rapide 
+
+1. Configuration de votre identité
+   1. git config --global user.name "John Doe"
+   2. git config --global user.email johndoe@example.com
+
+### Créer un dépôt local
+
+![https://makeameme.org/meme/git-init-i](img/init.jfif)
 
 #### Si vous voulez suivre les modifications de votre travail en cours
 
-Dans ce répertoire les fichiers seront éditables
+Dans ce répertoire, les fichiers seront éditables
 
 ````bash
     cd mon/repertoire/à/suivre
@@ -90,7 +101,37 @@ Dans ce répertoire les fichiers seront éditables
 
 #### Si vous voulez faire un répertoire qui sera partagé et sur lequel vous allez faire des opérations de type "push
 
+Les fichiers ne pourront pas être édités. Cela sert principalement si vous voulez créer un dépôt distant centralisé.
+
 ````bash
     cd mon/repertoire/à/suivre
     git init --bare .
 ````
+
+#### Répertoire .git
+
+Les deux commandes vont créer un répertoire nommé '.git'. C'est le répertoire qui va stocker quasiment tout ce que Git stocke et manipule.
+
+### Cloner un dépôt
+
+![https://memegenerator.net/instance/63178072/itll-be-fun-they-say-just-clone-the-git-repo-they-said-itll-be-fun-they-said](img/clone.jfif)
+
+````bash
+    cd mon/repertoire/ou/mettre/les/fichiers
+    git clone adresse_du_dépôt
+````
+
+Un sous-répertoire va être créé avec le nom court du dépôt et il contiendra tous les fichiers clonés ainsi que le répertoire .git
+
+
+*Exercice*
+
+- Cloner le dépot de la formation avec l'adresse 2 si vous avez un compte sinon sur l'adresse 1
+  - adresse 1 : [https://github.com/RenaudBCEREMA/gpn-gitlearn](https://github.com/RenaudBCEREMA/gpn-gitlearn)
+  - adresse 2 : Gitlab CEREMA  A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+## Crédits
+
+Les crédits pour les images sont inclus dans le fichier Markdown de source.
+Beaucoup de ressources sont extraites du livre "Pro Git" qui est mis à disposition sur [Git SCM](https://git-scm.com/book/fr/v2)
