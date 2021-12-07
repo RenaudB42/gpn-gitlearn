@@ -85,6 +85,9 @@ On prend son gestionnaire de paquet préféré et on choisit le paquet git ! Au 
 1. Configuration de votre identité
    1. git config --global user.name "John Doe"
    2. git config --global user.email johndoe@example.com
+2. Configuration du proxy
+   1. git config --global http.proxy http://direct.proxy.i2:8080 // Si vous êtes au bureau
+   2. git config --global --unset http.proxy // Si vous êtes à la maison
 
 ### Créer un dépôt local
 
