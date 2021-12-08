@@ -252,6 +252,14 @@ Pousser ses derniers commits sur le dépôt distant
 Lorsque l'on collabore a plusieurs, il faut évidemment récupérer les modifications des autres 
 
 
+````bash
+    # Voir ce qui a été modifié
+    git fetch
+
+    # Récupérer les changements
+    git pull
+````
+
 ## A traiter plus tard
 
  1. cherry-pick
