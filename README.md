@@ -21,11 +21,11 @@
       - [Si vous voulez faire un répertoire qui sera partagé et sur lequel vous allez faire des opérations de type "push](#si-vous-voulez-faire-un-répertoire-qui-sera-partagé-et-sur-lequel-vous-allez-faire-des-opérations-de-type-push)
       - [Répertoire .git](#répertoire-git)
     - [Cloner un dépôt](#cloner-un-dépôt)
-      - [Exercive](#exercive)
+      - [Exercice](#exercice)
     - [Créer une branche](#créer-une-branche)
       - [Pourquoi faire des branches ?](#pourquoi-faire-des-branches-)
       - [Commandes](#commandes)
-      - [Exercice](#exercice)
+      - [Exercice](#exercice-1)
     - [Faire des modifications et les enregistrer](#faire-des-modifications-et-les-enregistrer)
       - [Statut d'un fichier](#statut-dun-fichier)
   - [Crédits](#crédits)
@@ -131,7 +131,7 @@ Les deux commandes vont créer un répertoire nommé '.git'. C'est le répertoir
 
 Un sous-répertoire va être créé avec le nom court du dépôt et il contiendra tous les fichiers clonés ainsi que le répertoire .git
 
-#### Exercive
+#### Exercice
 
 - Cloner le dépot de la formation avec l'adresse 2 si vous avez un compte sinon sur l'adresse 1
   - adresse 1 : [https://github.com/RenaudBCEREMA/gpn-gitlearn](https://github.com/RenaudBCEREMA/gpn-gitlearn)
