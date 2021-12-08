@@ -25,10 +25,11 @@
     - [Créer une branche](#créer-une-branche)
       - [Pourquoi faire des branches ?](#pourquoi-faire-des-branches-)
       - [Commandes](#commandes)
+    - [Faire des modifications et les enregistrer](#faire-des-modifications-et-les-enregistrer)
+      - [Statut d'un fichier](#statut-dun-fichier)
   - [Crédits](#crédits)
 
 - Git :
-  - créer une branche
   - faire un commit
   - faire un pull
   - faire un push
@@ -153,9 +154,32 @@ Les branches sont un moyen efficaces de faire des modifications sur des fichiers
 
     # créer une branche
     git checkout -b nom_de_ma_branche
+
+    # Supprimer une branche
+    git branch -d nom_de_la_branche_a_supprimer
 ````
+
+### Faire des modifications et les enregistrer
+
+#### Statut d'un fichier
+
+Non suivi : Le fichier est présent dans le répertoire mais n'est pas ajouté à l'index git.
+Non modifié : Le fichier est dans le répertoire et ajouté à l'index avec la commande git add. Si des changements ont été faits, ils n'ont pas été suivis. C'est aussi le statut des fichiers après un enregistrement dans le dépôt.
+Modified state : Le fichier suivi a été édité mais les changements n'ont pas été enregistrés dans le dépôt git.
+Staged state : Le fichier a été enregistré dans le dépôt git et est prêt à être envoyés sur le dépôt.
+
+````bash
+    # dans le répertoire du projet git
+
+    
+````
+
+![Gestionnaire de version](img/version.PNG)
+
+
 
 ## Crédits
 
-Les crédits pour les images sont inclus dans le fichier Markdown de source.
-Beaucoup de ressources sont extraites du livre "Pro Git" qui est mis à disposition sur [Git SCM](https://git-scm.com/book/fr/v2)
+1. Les crédits pour les images sont inclus dans le fichier Markdown de source.
+2. Beaucoup de ressources sont extraites du livre "Pro Git" qui est mis à disposition sur [Git SCM](https://git-scm.com/book/fr/v2)
+3. [Article sur les statuts des fichiers dans Git](https://shitalmule04.github.io/file-status-lifecycle-in-git.html)
