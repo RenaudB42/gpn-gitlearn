@@ -21,10 +21,11 @@
       - [Si vous voulez faire un répertoire qui sera partagé et sur lequel vous allez faire des opérations de type "push](#si-vous-voulez-faire-un-répertoire-qui-sera-partagé-et-sur-lequel-vous-allez-faire-des-opérations-de-type-push)
       - [Répertoire .git](#répertoire-git)
     - [Cloner un dépôt](#cloner-un-dépôt)
+    - [Créer une branche](#créer-une-branche)
+      - [Pourquoi faire des branches ?](#pourquoi-faire-des-branches-)
   - [Crédits](#crédits)
 
 - Git :
-  - cloner un dépôt  
   - créer une branche
   - faire un commit
   - faire un pull
@@ -126,13 +127,17 @@ Les deux commandes vont créer un répertoire nommé '.git'. C'est le répertoir
 
 Un sous-répertoire va être créé avec le nom court du dépôt et il contiendra tous les fichiers clonés ainsi que le répertoire .git
 
-
 *Exercice*
 
 - Cloner le dépot de la formation avec l'adresse 2 si vous avez un compte sinon sur l'adresse 1
   - adresse 1 : [https://github.com/RenaudBCEREMA/gpn-gitlearn](https://github.com/RenaudBCEREMA/gpn-gitlearn)
   - adresse 2 : Gitlab CEREMA  A FAIRE !!!!!!!!!!!!!!!!!!!!!!!!!
 
+### Créer une branche
+
+![](img/push_master.jpg)
+
+#### Pourquoi faire des branches ?
 
 ## Crédits
 
