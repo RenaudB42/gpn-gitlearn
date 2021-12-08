@@ -28,12 +28,12 @@
       - [Exercice](#exercice-1)
     - [Faire des modifications et les enregistrer](#faire-des-modifications-et-les-enregistrer)
       - [Statut d'un fichier](#statut-dun-fichier)
+    - [Envoyer ses modifications au dépôt distant](#envoyer-ses-modifications-au-dépôt-distant)
+  - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
 
 - Git :
-  - faire un commit
   - faire un pull
-  - faire un push
   - merger des modifications concurrentes
 
 - Gitlab / Github :
@@ -59,6 +59,8 @@
     __On a tous une copie du dépôt et on peut continuer à enregistrer ses modifications hors connexion__
 
     ![Décentralisé](img/decentralise.png)
+
+    __On peut aussi les partager avec les autres directement sans passer par le dépôt distant__
 
 ### Pourquoi?
 
@@ -201,6 +203,13 @@ Staged state : Le fichier a été enregistré dans le dépôt git et est prêt �
 
 ![Gestionnaire de version](img/version.PNG)
 
+### Envoyer ses modifications au dépôt distant
+
+
+## A traiter plus tard
+
+ 1. cherry-pick
+ 2. partage sans dépôt distant
 ## Crédits
 
 1. Les crédits pour les images sont inclus dans le fichier Markdown de source.
