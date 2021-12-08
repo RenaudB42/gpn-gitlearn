@@ -8,6 +8,7 @@
 
 - [Formation Git pour le groupe projet numériques](#formation-git-pour-le-groupe-projet-numériques)
   - [Sommaire](#sommaire)
+  - [Petite introduction sur la session](#petite-introduction-sur-la-session)
   - [Git](#git)
     - [C'est quoi ?](#cest-quoi-)
     - [Pourquoi?](#pourquoi)
@@ -30,6 +31,8 @@
       - [Statut d'un fichier](#statut-dun-fichier)
       - [Exercice](#exercice-2)
     - [Envoyer ses modifications au dépôt distant](#envoyer-ses-modifications-au-dépôt-distant)
+      - [Exercice](#exercice-3)
+    - [Récupérer des modifications depuis le dépôt distant](#récupérer-des-modifications-depuis-le-dépôt-distant)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
 
@@ -41,6 +44,14 @@
   - Créer un dépôt
   - Faire un fork d'un dépôt
   - Faire une Merge Request
+
+## Petite introduction sur la session
+
+1. L'ensemble de la démonstration est basée sur les lignes de commandes Git
+
+![https://www.commitstrip.com/fr/2016/12/22/terminal-forever](img/Strip-Lignes-de-commande-650-final.jpg)
+
+2. Il y a des exercices à faire au cours de la session. Quand vous avez fini, mettre "nom_exercice plateforme fini" dans le chat ( ex : git_pull github fini)
 
 ## Git
 
@@ -204,7 +215,9 @@ Staged state : Le fichier a été enregistré dans le dépôt git et est prêt �
 
 #### Exercice
 
-Ajouter un fichier quelconque à son dépôt et le "commité"
+Ajouter un fichier quelconque nommé mon_nom.txt à son dépôt
+Faire quelques modifications dans ce fichier
+ et le "commité"
 
 ![Gestionnaire de version](img/version.PNG)
 
@@ -222,6 +235,21 @@ Les pushs quotidiens permettent de limiter le nombre d'envoi au dépôt distant 
 2. dans la journée, je fais mes modifications
 3. le soir je pousse mes modifications
 
+````bash
+    # Pousser ses modifications
+    git push
+
+    # Si la branche n'existe pas sur le dépôt distant.
+    git push --set-upstream origin/nom_de_ma_branche
+````
+
+#### Exercice
+
+Pousser ses derniers commits sur le dépôt distant
+
+### Récupérer des modifications depuis le dépôt distant
+
+Lorsque l'on collabore a plusieurs, il faut évidemment récupérer les modifications des autres 
 
 
 ## A traiter plus tard
