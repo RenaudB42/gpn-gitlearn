@@ -28,6 +28,7 @@
       - [Exercice](#exercice-1)
     - [Faire des modifications et les enregistrer](#faire-des-modifications-et-les-enregistrer)
       - [Statut d'un fichier](#statut-dun-fichier)
+      - [Exercice](#exercice-2)
     - [Envoyer ses modifications au dépôt distant](#envoyer-ses-modifications-au-dépôt-distant)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
@@ -201,9 +202,27 @@ Staged state : Le fichier a été enregistré dans le dépôt git et est prêt �
     
 ````
 
+#### Exercice
+
+Ajouter un fichier quelconque à son dépôt et le "commité"
+
 ![Gestionnaire de version](img/version.PNG)
 
 ### Envoyer ses modifications au dépôt distant
+
+![https://memegenerator.net/img/instances/64416232/git-push-you-must-before-go-home.jpg](img/git-push-you-must-before-go-home.jpg)
+
+Plus sérieusement, je préconise des commits très réguliers ( dès qu'on a finit d'écrire sa fonction / son paragraphe par exemple) et des pushs quotidiennement
+
+Cela permet d'avoir des commits qui ont un impact limité et sur lesquels on peut revenir rapidement. Cela force aussi à décrire ce que l'on fait très souvent et cela permet la compréhension du travail réalisé lors qu'une autre personne va relire votre description de commit. (NB c'est important et vous verrez pourquoi).
+
+Les pushs quotidiens permettent de limiter le nombre d'envoi au dépôt distant et permettent par exemple de faire un cylce de travail en équipe du genre :
+
+1. le matin, je relis les commits de mes collègues pour voir si cela impacte mon code
+2. dans la journée, je fais mes modifications
+3. le soir je pousse mes modifications
+
+
 
 ## A traiter plus tard
 
