@@ -25,6 +25,7 @@
     - [Créer une branche](#créer-une-branche)
       - [Pourquoi faire des branches ?](#pourquoi-faire-des-branches-)
       - [Commandes](#commandes)
+      - [Exercice](#exercice)
     - [Faire des modifications et les enregistrer](#faire-des-modifications-et-les-enregistrer)
       - [Statut d'un fichier](#statut-dun-fichier)
   - [Crédits](#crédits)
@@ -158,6 +159,10 @@ Les branches sont un moyen efficaces de faire des modifications sur des fichiers
     # Supprimer une branche
     git branch -d nom_de_la_branche_a_supprimer
 ````
+
+#### Exercice
+
+Créer une branche à son nom depuis la branche dev
 
 ### Faire des modifications et les enregistrer
 
