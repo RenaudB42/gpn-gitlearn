@@ -168,15 +168,33 @@ Non modifié : Le fichier est dans le répertoire et ajouté à l'index avec la 
 Modified state : Le fichier suivi a été édité mais les changements n'ont pas été enregistrés dans le dépôt git.
 Staged state : Le fichier a été enregistré dans le dépôt git et est prêt à être envoyés sur le dépôt.
 
-````bash
-    # dans le répertoire du projet git
+![https://datacadamia.com/_media/code/version/git/git_file_lifecycle.png?w=600&h=248&buster=1429375764&tok=a2501e](img/git_file_lifecycle.png)
 
+````bash
+    # création d'un fichier texte quelconque
+    touch text.txt
+
+    #Ajout du fichier à l'index
+    git add ./test.txt
+
+    #On regarde les modifications du dépôt le fichier est indiqué comme nouveau
+    git status
+
+    #Editer le fichier et ajouter du contenu
+    notepad ./test.txt
+
+    #On regarde les modifications du dépôt le fichier est indiqué comme nouveau et édité
+    git status
+
+    # On enregistre les modifications dans le dépôt local
+    git commit -m "Ajout et édition du fichier test.txt"
+
+    #On regarde les modifications du dépôt le fichier n'est plus dans la liste
+    git status
     
 ````
 
 ![Gestionnaire de version](img/version.PNG)
-
-
 
 ## Crédits
 
