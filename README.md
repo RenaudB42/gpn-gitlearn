@@ -34,6 +34,7 @@
       - [Exercice](#exercice-3)
     - [Récupérer des modifications depuis le dépôt distant](#récupérer-des-modifications-depuis-le-dépôt-distant)
       - [Exercice](#exercice-4)
+    - [Gérer les conflits](#gérer-les-conflits)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
 
@@ -265,11 +266,17 @@ Lorsque l'on collabore a plusieurs, il faut évidemment récupérer les modifica
 
 Récupérer les dernière modifications sur la branche dev distante et mettre à jour votre branche dev distante
 
+### Gérer les conflits
+
+
+
 ## A traiter plus tard
 
- 1. cherry-pick
- 2. partage sans dépôt distant
- 3. CI/CD
+ 1. fusionner des branches
+ 2. blame
+ 3. cherry-pick
+ 4. partage sans dépôt distant
+ 5. CI/CD
 
 ## Crédits
 
