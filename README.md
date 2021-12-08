@@ -21,8 +21,10 @@
       - [Si vous voulez faire un répertoire qui sera partagé et sur lequel vous allez faire des opérations de type "push](#si-vous-voulez-faire-un-répertoire-qui-sera-partagé-et-sur-lequel-vous-allez-faire-des-opérations-de-type-push)
       - [Répertoire .git](#répertoire-git)
     - [Cloner un dépôt](#cloner-un-dépôt)
+      - [Exercive](#exercive)
     - [Créer une branche](#créer-une-branche)
       - [Pourquoi faire des branches ?](#pourquoi-faire-des-branches-)
+      - [Commandes](#commandes)
   - [Crédits](#crédits)
 
 - Git :
@@ -127,7 +129,7 @@ Les deux commandes vont créer un répertoire nommé '.git'. C'est le répertoir
 
 Un sous-répertoire va être créé avec le nom court du dépôt et il contiendra tous les fichiers clonés ainsi que le répertoire .git
 
-*Exercice*
+#### Exercive
 
 - Cloner le dépot de la formation avec l'adresse 2 si vous avez un compte sinon sur l'adresse 1
   - adresse 1 : [https://github.com/RenaudBCEREMA/gpn-gitlearn](https://github.com/RenaudBCEREMA/gpn-gitlearn)
@@ -135,9 +137,23 @@ Un sous-répertoire va être créé avec le nom court du dépôt et il contiendr
 
 ### Créer une branche
 
-![](img/push_master.jpg)
+![https://preview.redd.it/o3ykplgtjkr41.jpg?auto=webp&s=4cdf00ab79b3b4ad4dffc79b8e867bb39e787008](img/push_master.jpg)
 
 #### Pourquoi faire des branches ?
+
+Les branches sont un moyen efficaces de faire des modifications sur des fichiers sans casser le fonctionnement principal de notre application
+
+#### Commandes
+
+````bash
+    # dans le répertoire du projet git
+
+    ## lister les branches
+    git branch # rajouter -v si vous voulez le texte du dernier commit sur la branche
+
+    # créer une branche
+    git checkout -b nom_de_ma_branche
+````
 
 ## Crédits
 
