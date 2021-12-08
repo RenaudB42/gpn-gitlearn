@@ -35,6 +35,7 @@
     - [Récupérer des modifications depuis le dépôt distant](#récupérer-des-modifications-depuis-le-dépôt-distant)
       - [Exercice](#exercice-4)
     - [Gérer les conflits](#gérer-les-conflits)
+      - [Exercice](#exercice-5)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
 
@@ -268,7 +269,39 @@ Récupérer les dernière modifications sur la branche dev distante et mettre à
 
 ### Gérer les conflits
 
+Souvent au moment de push ses modifications, on se retrouve avec des conflits car des modifications ont été faites par les autres développeurs pendant que vous étiez en train de faire votre code.
+Il faut alors résoudre les conflits
 
+Il existe plusieurs façons de faire. En voici une
+
+````bash
+    # On met de côté ce que l'on a fait
+    git stash 
+
+    # Récupérer les changements
+    git pull
+
+    # Ajouter ses changements
+    git stash apply
+
+    # Résoudire les conflits de merge
+    git mergetool
+
+    # Ajouter les fichiers corrigés
+    git add .
+
+    # Faire un commit de merge
+    git commit -m "Merge de la branche dev distante et de la branche dev local"
+
+    # On vide le stasg
+    git stash drop
+
+    # ON pousse tout cela
+    git push
+````
+#### Exercice
+
+Des modifications ont été faites sur votre branche personnelle sur le dépôt distant. Corrigez les !
 
 ## A traiter plus tard
 
