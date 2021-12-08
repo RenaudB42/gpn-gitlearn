@@ -205,11 +205,12 @@ Staged state : Le fichier a été enregistré dans le dépôt git et est prêt �
 
 ### Envoyer ses modifications au dépôt distant
 
-
 ## A traiter plus tard
 
  1. cherry-pick
  2. partage sans dépôt distant
+ 3. CI/CD
+
 ## Crédits
 
 1. Les crédits pour les images sont inclus dans le fichier Markdown de source.
