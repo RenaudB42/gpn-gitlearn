@@ -33,11 +33,11 @@
     - [Envoyer ses modifications au dépôt distant](#envoyer-ses-modifications-au-dépôt-distant)
       - [Exercice](#exercice-3)
     - [Récupérer des modifications depuis le dépôt distant](#récupérer-des-modifications-depuis-le-dépôt-distant)
+      - [Exercice](#exercice-4)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
 
 - Git :
-  - faire un pull
   - merger des modifications concurrentes
 
 - Gitlab / Github :
@@ -255,10 +255,15 @@ Lorsque l'on collabore a plusieurs, il faut évidemment récupérer les modifica
 ````bash
     # Voir ce qui a été modifié
     git fetch
+    git diff ..origin/nom_de_ma_branche
 
     # Récupérer les changements
     git pull
 ````
+
+#### Exercice
+
+Récupérer les dernière modifications sur la branche dev distante et mettre à jour votre branche dev distante
 
 ## A traiter plus tard
 
