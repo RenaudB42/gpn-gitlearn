@@ -110,10 +110,10 @@ var O=Object.defineProperty;var n=(V,S)=>O(V,"name",{value:S,configurable:!0});(
 <p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\git%20master.jpg" alt="https://codingpug.files.wordpress.com/2018/02/e0d4afacba74c1b28ae4caad6f98e9d2d1689fe8e43dc1ee680214c75eb24e17.jpg"></p>
 <h2 id="sommaire">Sommaire</h2>
 <ul>
-<li>
-<p><a href="#formation-git-pour-le-groupe-projet-num%C3%A9riques">Formation Git pour le groupe projet numériques</a></p>
+<li><a href="#formation-git-pour-le-groupe-projet-num%C3%A9riques">Formation Git pour le groupe projet numériques</a>
 <ul>
 <li><a href="#sommaire">Sommaire</a></li>
+<li><a href="#petite-introduction-sur-la-session">Petite introduction sur la session</a></li>
 <li><a href="#git">Git</a>
 <ul>
 <li><a href="#cest-quoi-">C'est quoi ?</a></li>
@@ -133,32 +133,61 @@ var O=Object.defineProperty;var n=(V,S)=>O(V,"name",{value:S,configurable:!0});(
 <li><a href="#r%C3%A9pertoire-git">Répertoire .git</a></li>
 </ul>
 </li>
-<li><a href="#cloner-un-d%C3%A9p%C3%B4t">Cloner un dépôt</a></li>
+<li><a href="#cloner-un-d%C3%A9p%C3%B4t">Cloner un dépôt</a>
+<ul>
+<li><a href="#exercice">Exercice</a></li>
 </ul>
 </li>
+<li><a href="#cr%C3%A9er-une-branche">Créer une branche</a>
+<ul>
+<li><a href="#pourquoi-faire-des-branches-">Pourquoi faire des branches ?</a></li>
+<li><a href="#commandes">Commandes</a></li>
+<li><a href="#exercice-1">Exercice</a></li>
+</ul>
+</li>
+<li><a href="#faire-des-modifications-et-les-enregistrer">Faire des modifications et les enregistrer</a>
+<ul>
+<li><a href="#statut-dun-fichier">Statut d'un fichier</a></li>
+<li><a href="#exercice-2">Exercice</a></li>
+</ul>
+</li>
+<li><a href="#envoyer-ses-modifications-au-d%C3%A9p%C3%B4t-distant">Envoyer ses modifications au dépôt distant</a>
+<ul>
+<li><a href="#exercice-3">Exercice</a></li>
+</ul>
+</li>
+<li><a href="#r%C3%A9cup%C3%A9rer-des-modifications-depuis-le-d%C3%A9p%C3%B4t-distant">Récupérer des modifications depuis le dépôt distant</a>
+<ul>
+<li><a href="#exercice-4">Exercice</a></li>
+</ul>
+</li>
+<li><a href="#g%C3%A9rer-les-conflits">Gérer les conflits</a>
+<ul>
+<li><a href="#exercice-5">Exercice</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#gitlab--github-">Gitlab / Github :</a>
+<ul>
+<li><a href="#cr%C3%A9er-un-d%C3%A9p%C3%B4t">Créer un dépôt</a></li>
+<li><a href="#faire-un-fork-dun-d%C3%A9p%C3%B4t">Faire un fork d'un dépôt</a></li>
+<li><a href="#faire-une-merge-request">Faire une Merge Request</a></li>
+</ul>
+</li>
+<li><a href="#a-traiter-plus-tard">A traiter plus tard</a></li>
 <li><a href="#cr%C3%A9dits">Crédits</a></li>
 </ul>
 </li>
-<li>
-<p>Git :</p>
-<ul>
-<li>cloner un dépôt</li>
-<li>créer une branche</li>
-<li>faire un commit</li>
-<li>faire un pull</li>
-<li>faire un push</li>
-<li>merger des modifications concurrentes</li>
 </ul>
-</li>
-<li>
-<p>Gitlab / Github :</p>
-<ul>
-<li>Créer un dépôt</li>
-<li>Faire un fork d'un dépôt</li>
-<li>Faire une Merge Request</li>
-</ul>
-</li>
-</ul>
+<h2 id="petite-introduction-sur-la-session">Petite introduction sur la session</h2>
+<ol>
+<li>L'ensemble de la démonstration est basée sur les lignes de commandes Git</li>
+</ol>
+<p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\Strip-Lignes-de-commande-650-final.jpg" alt="https://www.commitstrip.com/fr/2016/12/22/terminal-forever"></p>
+<ol start="2">
+<li>Il y a des exercices à faire au cours de la session. Quand vous avez fini, mettre &quot;nom_exercice plateforme fini&quot; dans le chat ( ex : git_pull github fini)</li>
+</ol>
 <h2 id="git">Git</h2>
 <p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\Strip-Former-ou-ne-pas-former-650-final.jpg" alt="Former ou ne pas former"></p>
 <p><a href="https://www.commitstrip.com/fr/2016/05/24/training-the-newbie/?">Lien original</a></p>
@@ -173,6 +202,7 @@ var O=Object.defineProperty;var n=(V,S)=>O(V,"name",{value:S,configurable:!0});(
 <p>Décentralisé</p>
 <p><strong>On a tous une copie du dépôt et on peut continuer à enregistrer ses modifications hors connexion</strong></p>
 <p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\decentralise.png" alt="Décentralisé"></p>
+<p><strong>On peut aussi les partager avec les autres directement sans passer par le dépôt distant</strong></p>
 </li>
 </ol>
 <h3 id="pourquoi">Pourquoi?</h3>
@@ -226,7 +256,7 @@ var O=Object.defineProperty;var n=(V,S)=>O(V,"name",{value:S,configurable:!0});(
     git <span class="hljs-built_in">clone</span> adresse_du_dépôt
 </div></code></pre>
 <p>Un sous-répertoire va être créé avec le nom court du dépôt et il contiendra tous les fichiers clonés ainsi que le répertoire .git</p>
-<p><em>Exercice</em></p>
+<h4 id="exercice">Exercice</h4>
 <ul>
 <li>Cloner le dépot de la formation avec l'adresse 2 si vous avez un compte sinon sur l'adresse 1
 <ul>
@@ -235,9 +265,135 @@ var O=Object.defineProperty;var n=(V,S)=>O(V,"name",{value:S,configurable:!0});(
 </ul>
 </li>
 </ul>
+<h3 id="créer-une-branche">Créer une branche</h3>
+<p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\push_master.jpg" alt="https://preview.redd.it/o3ykplgtjkr41.jpg?auto=webp&amp;s=4cdf00ab79b3b4ad4dffc79b8e867bb39e787008"></p>
+<h4 id="pourquoi-faire-des-branches-">Pourquoi faire des branches ?</h4>
+<p>Les branches sont un moyen efficaces de faire des modifications sur des fichiers sans casser le fonctionnement principal de notre application</p>
+<h4 id="commandes">Commandes</h4>
+<pre><code class="language-bash"><div>    <span class="hljs-comment"># dans le répertoire du projet git</span>
+
+    <span class="hljs-comment">## lister les branches</span>
+    git branch <span class="hljs-comment"># rajouter -v si vous voulez le texte du dernier commit sur la branche</span>
+
+    <span class="hljs-comment"># créer une branche</span>
+    git checkout -b nom_de_ma_branche
+
+    <span class="hljs-comment"># Supprimer une branche</span>
+    git branch -d nom_de_la_branche_a_supprimer
+</div></code></pre>
+<h4 id="exercice-1">Exercice</h4>
+<p>Créer une branche à son nom depuis la branche dev</p>
+<h3 id="faire-des-modifications-et-les-enregistrer">Faire des modifications et les enregistrer</h3>
+<h4 id="statut-dun-fichier">Statut d'un fichier</h4>
+<p>Non suivi : Le fichier est présent dans le répertoire mais n'est pas ajouté à l'index git.
+Non modifié : Le fichier est dans le répertoire et ajouté à l'index avec la commande git add. Si des changements ont été faits, ils n'ont pas été suivis. C'est aussi le statut des fichiers après un enregistrement dans le dépôt.
+Modified state : Le fichier suivi a été édité mais les changements n'ont pas été enregistrés dans le dépôt git.
+Staged state : Le fichier a été enregistré dans le dépôt git et est prêt à être envoyés sur le dépôt.</p>
+<p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\git_file_lifecycle.png" alt="https://datacadamia.com/_media/code/version/git/git_file_lifecycle.png?w=600&amp;h=248&amp;buster=1429375764&amp;tok=a2501e"></p>
+<pre><code class="language-bash"><div>    <span class="hljs-comment"># création d&#x27;un fichier texte quelconque</span>
+    touch text.txt
+
+    <span class="hljs-comment">#Ajout du fichier à l&#x27;index</span>
+    git add ./test.txt
+
+    <span class="hljs-comment">#On regarde les modifications du dépôt le fichier est indiqué comme nouveau</span>
+    git status
+
+    <span class="hljs-comment">#Editer le fichier et ajouter du contenu</span>
+    notepad ./test.txt
+
+    <span class="hljs-comment">#On regarde les modifications du dépôt le fichier est indiqué comme nouveau et édité</span>
+    git status
+
+    <span class="hljs-comment"># On enregistre les modifications dans le dépôt local</span>
+    git commit -m <span class="hljs-string">&quot;Ajout et édition du fichier test.txt&quot;</span>
+
+    <span class="hljs-comment">#On regarde les modifications du dépôt le fichier n&#x27;est plus dans la liste</span>
+    git status
+    
+</div></code></pre>
+<h4 id="exercice-2">Exercice</h4>
+<p>Ajouter un fichier quelconque nommé mon_nom.txt à son dépôt
+Faire quelques modifications dans ce fichier
+et le &quot;commité&quot;</p>
+<p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\version.PNG" alt="Gestionnaire de version"></p>
+<h3 id="envoyer-ses-modifications-au-dépôt-distant">Envoyer ses modifications au dépôt distant</h3>
+<p><img src="file:///d:\RB_Travail\Formation GIT\1\gpn-gitlearn\img\git-push-you-must-before-go-home.jpg" alt="https://memegenerator.net/img/instances/64416232/git-push-you-must-before-go-home.jpg"></p>
+<p>Plus sérieusement, je préconise des commits très réguliers ( dès qu'on a finit d'écrire sa fonction / son paragraphe par exemple) et des pushs quotidiennement</p>
+<p>Cela permet d'avoir des commits qui ont un impact limité et sur lesquels on peut revenir rapidement. Cela force aussi à décrire ce que l'on fait très souvent et cela permet la compréhension du travail réalisé lors qu'une autre personne va relire votre description de commit. (NB c'est important et vous verrez pourquoi).</p>
+<p>Les pushs quotidiens permettent de limiter le nombre d'envoi au dépôt distant et permettent par exemple de faire un cylce de travail en équipe du genre :</p>
+<ol>
+<li>le matin, je relis les commits de mes collègues pour voir si cela impacte mon code</li>
+<li>dans la journée, je fais mes modifications</li>
+<li>le soir je pousse mes modifications</li>
+</ol>
+<pre><code class="language-bash"><div>    <span class="hljs-comment"># Pousser ses modifications</span>
+    git push
+
+    <span class="hljs-comment"># Si la branche n&#x27;existe pas sur le dépôt distant.</span>
+    git push --set-upstream origin/nom_de_ma_branche
+</div></code></pre>
+<h4 id="exercice-3">Exercice</h4>
+<p>Pousser ses derniers commits sur le dépôt distant</p>
+<h3 id="récupérer-des-modifications-depuis-le-dépôt-distant">Récupérer des modifications depuis le dépôt distant</h3>
+<p>Lorsque l'on collabore a plusieurs, il faut évidemment récupérer les modifications des autres</p>
+<pre><code class="language-bash"><div>    <span class="hljs-comment"># Voir ce qui a été modifié</span>
+    git fetch
+    git diff ..origin/nom_de_ma_branche
+
+    <span class="hljs-comment"># Récupérer les changements</span>
+    git pull
+</div></code></pre>
+<h4 id="exercice-4">Exercice</h4>
+<p>Récupérer les dernière modifications sur la branche dev distante et mettre à jour votre branche dev distante</p>
+<h3 id="gérer-les-conflits">Gérer les conflits</h3>
+<p>Souvent au moment de push ses modifications, on se retrouve avec des conflits car des modifications ont été faites par les autres développeurs pendant que vous étiez en train de faire votre code.
+Il faut alors résoudre les conflits</p>
+<p>Il existe plusieurs façons de faire. En voici une</p>
+<pre><code class="language-bash"><div>    <span class="hljs-comment"># On met de côté ce que l&#x27;on a fait</span>
+    git stash 
+
+    <span class="hljs-comment"># Récupérer les changements</span>
+    git pull
+
+    <span class="hljs-comment"># Ajouter ses changements</span>
+    git stash apply
+
+    <span class="hljs-comment"># Résoudire les conflits de merge</span>
+    git mergetool
+
+    <span class="hljs-comment"># Ajouter les fichiers corrigés</span>
+    git add .
+
+    <span class="hljs-comment"># Faire un commit de merge</span>
+    git commit -m <span class="hljs-string">&quot;Merge de la branche dev distante et de la branche dev local&quot;</span>
+
+    <span class="hljs-comment"># On vide le stasg</span>
+    git stash drop
+
+    <span class="hljs-comment"># ON pousse tout cela</span>
+    git push
+</div></code></pre>
+<h4 id="exercice-5">Exercice</h4>
+<p>Des modifications ont été faites sur votre branche personnelle sur le dépôt distant. Corrigez les !</p>
+<h2 id="gitlab--github-">Gitlab / Github :</h2>
+<h3 id="créer-un-dépôt">Créer un dépôt</h3>
+<h3 id="faire-un-fork-dun-dépôt">Faire un fork d'un dépôt</h3>
+<h3 id="faire-une-merge-request">Faire une Merge Request</h3>
+<h2 id="a-traiter-plus-tard">A traiter plus tard</h2>
+<ol>
+<li>fusionner des branches</li>
+<li>blame</li>
+<li>cherry-pick</li>
+<li>partage sans dépôt distant</li>
+<li>CI/CD</li>
+</ol>
 <h2 id="crédits">Crédits</h2>
-<p>Les crédits pour les images sont inclus dans le fichier Markdown de source.
-Beaucoup de ressources sont extraites du livre &quot;Pro Git&quot; qui est mis à disposition sur <a href="https://git-scm.com/book/fr/v2">Git SCM</a></p>
+<ol>
+<li>Les crédits pour les images sont inclus dans le fichier Markdown de source.</li>
+<li>Beaucoup de ressources sont extraites du livre &quot;Pro Git&quot; qui est mis à disposition sur <a href="https://git-scm.com/book/fr/v2">Git SCM</a></li>
+<li><a href="https://shitalmule04.github.io/file-status-lifecycle-in-git.html">Article sur les statuts des fichiers dans Git</a></li>
+</ol>
 
     </body>
     </html>
