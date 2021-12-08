@@ -36,16 +36,12 @@
       - [Exercice](#exercice-4)
     - [Gérer les conflits](#gérer-les-conflits)
       - [Exercice](#exercice-5)
+  - [Gitlab / Github :](#gitlab--github-)
+    - [Créer un dépôt](#créer-un-dépôt)
+    - [Faire un fork d'un dépôt](#faire-un-fork-dun-dépôt)
+    - [Faire une Merge Request](#faire-une-merge-request)
   - [A traiter plus tard](#a-traiter-plus-tard)
   - [Crédits](#crédits)
-
-- Git :
-  - merger des modifications concurrentes
-
-- Gitlab / Github :
-  - Créer un dépôt
-  - Faire un fork d'un dépôt
-  - Faire une Merge Request
 
 ## Petite introduction sur la session
 
@@ -302,6 +298,11 @@ Il existe plusieurs façons de faire. En voici une
 #### Exercice
 
 Des modifications ont été faites sur votre branche personnelle sur le dépôt distant. Corrigez les !
+
+## Gitlab / Github :
+### Créer un dépôt
+### Faire un fork d'un dépôt
+### Faire une Merge Request
 
 ## A traiter plus tard
 
