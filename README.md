@@ -1,4 +1,4 @@
-# Formation Git pour le groupe projet numériques
+# Formation Git pour le groupe projets numériques
 
 **Auteur : Renaud BURCK**
 
