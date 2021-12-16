@@ -202,6 +202,9 @@ Staged state : Le fichier a été enregistré dans le dépôt git et est prêt �
 
     #On regarde les modifications du dépôt le fichier est indiqué comme nouveau et édité
     git status
+    
+    #Ajout des modifications à l'index
+    git add ./test.txt
 
     # On enregistre les modifications dans le dépôt local
     git commit -m "Ajout et édition du fichier test.txt"
